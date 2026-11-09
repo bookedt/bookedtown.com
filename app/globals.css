@@ -1,3 +1,4 @@
+:root{--font-display:"Bricolage Grotesque Variable","Bricolage Grotesque",sans-serif;--font-body:"Inter Variable",Inter,system-ui,sans-serif}
 :root{
   --bg:#ffffff; --bg2:#f3f5f9; --card:#ffffff; --line:#dbe2ee; --navy:#011830;
   --ink:#011830; --mute:#4a5a73; --accent:#e96502; --accent-text:#b84f00; --accent-ink:#011830; --good:#15803d;
