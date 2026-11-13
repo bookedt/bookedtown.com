@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import "@fontsource-variable/bricolage-grotesque";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Reveal from "../components/Reveal";
 import { SITE_URL } from "../lib/config";
 import "./globals.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="top">{children}</main>
         <Footer />
+        <Reveal />
       </body>
     </html>
   );

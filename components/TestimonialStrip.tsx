@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { TESTIMONIALS } from "../lib/testimonials";
+import { VIDEOS } from "../lib/videos";
+import VideoGrid from "./VideoGrid";
 
 export default function TestimonialStrip() {
   const picks = [TESTIMONIALS[1], TESTIMONIALS[2], TESTIMONIALS[5]];
@@ -16,6 +18,8 @@ export default function TestimonialStrip() {
             </figure>
           ))}
         </div>
+        <h3 className="vtitle">Hear it from them</h3>
+        <VideoGrid videos={[VIDEOS[0], VIDEOS[2], VIDEOS[4]]} />
         <div className="center"><Link className="btn ghost" href="/testimonials">Read more reviews &rarr;</Link></div>
       </div>
     </section>

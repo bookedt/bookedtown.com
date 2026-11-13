@@ -2,7 +2,7 @@ import Link from "next/link";
 import BookButton from "../components/BookButton";
 import WorkPreview from "../components/WorkPreview";
 import ConnectedSystem from "../components/ConnectedSystem";
-import FieldServicesBanner from "../components/FieldServicesBanner";
+import HeroDashboard from "../components/HeroDashboard";
 import TestimonialStrip from "../components/TestimonialStrip";
 import TradesMarquee from "../components/TradesMarquee";
 import { ARTICLES } from "../lib/resources";
@@ -12,18 +12,24 @@ export default function Home() {
   return (
     <>
 <section className="hero">
+  <div className="hero-bg" aria-hidden="true"><span className="orb o1" /><span className="orb o2" /></div>
+  <div className="wrap hero-grid">
+    <div>
+      <h1>Get found. Get chosen.<br /><span className="hl grad">Get booked.</span></h1>
+      <p className="lead">Booked Town builds and runs the whole online system a contractor needs: a 15-20 page website, a Google Business Profile that earns map-pack calls, monthly SEO, and automatic follow-up that stops leads slipping away. One plan, $297 a month.</p>
+      <div className="cta-row">
+        <BookButton className="btn">Book a free strategy call &rarr;</BookButton>
+        <a className="btn ghost" href="#system">See what's included</a>
+      </div>
+      <div className="trust">
+        <span className="tick"><b>Site live in 7 business days</b></span>
+        <span className="tick"><b>Your domain, your Google profile, your reviews</b></span>
+        <span className="tick"><b>No long-term contract</b></span>
+      </div>
+    </div>
+    <HeroDashboard />
+  </div>
   <div className="wrap">
-    <h1>Get found. Get chosen.<br /><span className="hl">Get booked.</span></h1>
-    <p className="lead">Booked Town builds and runs the whole online system a contractor needs: a 15-20 page website, a Google Business Profile that earns map-pack calls, monthly SEO, and automatic follow-up that stops leads slipping away. One plan, $297 a month.</p>
-    <div className="cta-row">
-      <BookButton className="btn">Book a free strategy call &rarr;</BookButton>
-      <a className="btn ghost" href="#system">See what's included</a>
-    </div>
-    <div className="trust">
-      <span className="tick"><b>Site live in 7 business days</b></span>
-      <span className="tick"><b>Your domain, your Google profile, your reviews</b></span>
-      <span className="tick"><b>No long-term contract</b></span>
-    </div>
     <div className="stats">
       <div><strong>15-20</strong><span>page website, a page for every service and town</span></div>
       <div><strong>4</strong><span>Google Business Profile posts every month</span></div>
@@ -56,8 +62,6 @@ export default function Home() {
 </section>
 
 <ConnectedSystem />
-
-<FieldServicesBanner />
 
 <section id="how">
   <div className="wrap split">

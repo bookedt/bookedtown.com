@@ -1,5 +1,7 @@
 import { TESTIMONIALS } from "../../lib/testimonials";
 import { PageHero, CtaBand } from "../../components/Bits";
+import VideoGrid from "../../components/VideoGrid";
+import { VIDEOS } from "../../lib/videos";
 
 export const metadata = {
   title: "Testimonials",
@@ -31,6 +33,13 @@ export default function Testimonials() {
           <p className="note" style={{ marginTop: 26, maxWidth: 720 }}>
             Each review comes from a completed contract on Fiverr or Upwork, platforms we do not control. They are quoted as written; Fiverr shows usernames and Upwork shows no names. They are reviews of our team&rsquo;s website and build work, not of Booked Town&rsquo;s monthly plan. Reviews from Booked Town clients will be added here as they come in.
           </p>
+        </div>
+      </section>
+      <section className="alt">
+        <div className="wrap">
+          <h2>Video reviews</h2>
+          <p className="lead" style={{ marginTop: 18 }}>{VIDEOS.length} clients, on camera. These clips were recorded while Umair Gujjar, who leads our team, was at a previous agency, before Code Nova HQ. They still play from the channels that published them, and nothing has been re-cut.</p>
+          <VideoGrid videos={VIDEOS} />
         </div>
       </section>
       <CtaBand title="Be one of our first Booked Town clients" text="Book a free strategy call and we will show you what the system would look like for your business." />

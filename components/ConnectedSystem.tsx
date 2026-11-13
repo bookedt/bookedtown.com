@@ -97,6 +97,20 @@ const PARTS = [
     ),
   },
   {
+    href: "/services/field-services",
+    title: "Field Services runs the job after the lead.",
+    text: "Requests, estimates, scheduling, dispatch and invoices in the same system. Private beta, included as it opens.",
+    beta: true,
+    mock: (
+      <div className="m m-fs">
+        <div className="m-adhead"><b>Today&rsquo;s visits</b><span className="m-tag">Beta</span></div>
+        <div className="m-visit"><span>8:00</span><b>AC repair</b><em className="vc done">Completed</em></div>
+        <div className="m-visit"><span>10:30</span><b>Furnace tune-up</b><em className="vc way">On my way</em></div>
+        <div className="m-visit"><span>1:00</span><b>Estimate</b><em className="vc sched">Scheduled</em></div>
+      </div>
+    ),
+  },
+  {
     href: "/services/google-ads",
     title: "Paid ads add demand you can measure.",
     text: "An optional add-on once the foundation is working, tracked to the same lead journey.",
@@ -115,7 +129,7 @@ export default function ConnectedSystem() {
   return (
     <section id="system" className="alt">
       <div className="wrap">
-        <h2>Eight connected parts.<br /><span className="hl">One team accountable.</span></h2>
+        <h2>Nine connected parts.<br /><span className="hl">One team accountable.</span></h2>
         <p className="lead" style={{ marginTop: 20 }}>
           Point to one place when leads slow down, follow-up breaks, or the calendar has room. Hover over each part to see it at work.
         </p>
@@ -124,7 +138,7 @@ export default function ConnectedSystem() {
             <Link key={p.href + i} href={p.href} className="sys">
               <div className="sys-mock" aria-hidden="true">{p.mock}</div>
               <div className="sys-copy">
-                <span className="num">{p.addon ? "ADD-ON" : String(i + 1).padStart(2, "0")}</span>
+                <span className="num">{p.addon ? "ADD-ON" : p.beta ? "PRIVATE BETA" : String(i + 1).padStart(2, "0")}</span>
                 <h3>{p.title}</h3>
                 <p>{p.text}</p>
               </div>
