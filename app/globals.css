@@ -373,9 +373,9 @@ body{background:#fff}
 .btn:hover::after{transform:translateX(120%)}
 .btn.ghost{background:#fff}
 .btn.ghost::after{display:none}
-.grad{background:linear-gradient(100deg,#f07b01,#e25a00 55%,#c2410c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{color:var(--accent)}
 .alt{background:linear-gradient(180deg,#f3f5f9 0%,#f8f9fc 55%,#f3f5f9 100%)}
-h2 .hl{background:linear-gradient(100deg,#f07b01,#d95200);-webkit-background-clip:text;background-clip:text;color:transparent}
+
 
 /* hero */
 .hero{position:relative;overflow:hidden;padding:72px 0 56px;background:linear-gradient(180deg,#fff 0%,#f6f8fc 100%)}
@@ -470,4 +470,4 @@ h2 .hl{background:linear-gradient(100deg,#f07b01,#d95200);-webkit-background-cli
 }
 
 .hero h1{font-size:clamp(38px,4.6vw,62px)}
-.hero h1 .grad{display:inline-block}
+.hero h1 .grad{color:var(--accent)}
