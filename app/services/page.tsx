@@ -13,15 +13,15 @@ export default function Services() {
     <>
       <PageHero
         crumbs={[{ href: "/services", label: "The system" }]}
-        title={<>One system. <span className="hl">Seven ways to get booked.</span></>}
-        lead="Six services work together in the $297 plan, with Google Ads available as an add-on. Each one does a job the others depend on."
+        title={<>One system. <span className="hl">Eight ways to get booked.</span></>}
+        lead="Six services work together in the $297 plan, Field Services comes along as it opens (private beta), and Google Ads is an optional add-on. Each one does a job the others depend on."
       />
       <section style={{ paddingTop: 24 }}>
         <div className="wrap">
           <div className="grid g3" style={{ marginTop: 0 }}>
             {SERVICES.map((s, i) => (
               <Link key={s.slug} href={`/services/${s.slug}`} className="card linkcard">
-                <span className="num">{s.addon ? "ADD-ON" : String(i + 1).padStart(2, "0")}</span>
+                <span className="num">{s.addon ? "ADD-ON" : s.beta ? "NEW \u00B7 PRIVATE BETA" : String(i + 1).padStart(2, "0")}</span>
                 <h3>{s.name}</h3>
                 <p>{s.short}</p>
                 <span className="more">Learn more &rarr;</span>

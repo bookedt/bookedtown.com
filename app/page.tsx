@@ -2,6 +2,7 @@ import Link from "next/link";
 import BookButton from "../components/BookButton";
 import WorkPreview from "../components/WorkPreview";
 import ConnectedSystem from "../components/ConnectedSystem";
+import FieldServicesBanner from "../components/FieldServicesBanner";
 import TestimonialStrip from "../components/TestimonialStrip";
 import TradesMarquee from "../components/TradesMarquee";
 import { ARTICLES } from "../lib/resources";
@@ -55,6 +56,8 @@ export default function Home() {
 </section>
 
 <ConnectedSystem />
+
+<FieldServicesBanner />
 
 <section id="how">
   <div className="wrap split">
@@ -117,6 +120,7 @@ export default function Home() {
           <li>Missed-call text-back and lead follow-up</li>
           <li>Review requests after every job</li>
           <li>Customer reactivation and the mobile app</li>
+        <li>Field Services (requests, jobs, scheduling, dispatch) as it opens, in private beta</li>
           <li>Monthly report in plain English</li>
         </ul>
         <BookButton className="btn">Book a free strategy call &rarr;</BookButton>

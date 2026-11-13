@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
-  Globe, MapPin, TrendingUp, Star, PhoneMissed, RefreshCw, Megaphone, Info, MessageSquareQuote, Menu, X, ChevronDown, ArrowRight,
+  Globe, MapPin, TrendingUp, Star, PhoneMissed, RefreshCw, Megaphone, Info, MessageSquareQuote, CalendarCheck, Menu, X, ChevronDown, ArrowRight,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import BookButton from "./BookButton";
 import { ARTICLES } from "../lib/resources";
 
-type Item = { href: string; label: string; desc: string; Icon: LucideIcon };
+type Item = { href: string; label: string; desc: string; Icon: LucideIcon; tag?: string };
 
 const PRODUCT: { title: string; items: Item[] }[] = [
   {
@@ -32,6 +32,7 @@ const PRODUCT: { title: string; items: Item[] }[] = [
   {
     title: "Grow faster",
     items: [
+      { href: "/services/field-services", label: "Field Services", desc: "Jobs, scheduling and dispatch", Icon: CalendarCheck, tag: "Beta" },
       { href: "/services/google-ads", label: "Google Ads", desc: "Optional add-on, tracked to bookings", Icon: Megaphone },
     ],
   },
@@ -54,7 +55,7 @@ function MenuLink({ item, onClick }: { item: Item; onClick: () => void }) {
   return (
     <Link href={item.href} className="mi" onClick={onClick}>
       <span className="mi-icon"><Icon size={18} strokeWidth={2} aria-hidden="true" /></span>
-      <span><b>{item.label}</b><small>{item.desc}</small></span>
+      <span><b>{item.label}{item.tag && <em className="mtag">{item.tag}</em>}</b><small>{item.desc}</small></span>
     </Link>
   );
 }

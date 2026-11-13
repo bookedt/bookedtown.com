@@ -36,6 +36,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <h3>Your part</h3>
             <p>{s.yourPart}</p>
             {s.addon && <p className="note">Optional add-on. Not included in the $297 plan.</p>}
+            {s.beta && <p className="note">Private beta at HighLevel. Access is rolling out, and features may change.</p>}
           </div>
         </div>
       </section>

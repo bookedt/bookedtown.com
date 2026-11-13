@@ -11,6 +11,7 @@ export type Service = {
   yourPart: string;
   faqs: { q: string; a: string }[];
   addon?: boolean;
+  beta?: boolean;
 };
 
 export const SERVICES: Service[] = [
@@ -197,6 +198,46 @@ export const SERVICES: Service[] = [
     faqs: [
       { q: "What if my list is small or messy?", a: "That is fine. We clean it up. Even a short list is worth a campaign." },
     ],
+  },
+  {
+    slug: "field-services",
+    name: "Field Services",
+    short: "Requests, estimates, jobs, scheduling, dispatch and invoicing in the same system as your leads.",
+    headline: "Run the work, not just the leads.",
+    intro:
+      "Booked Town gets you the calls. Field Services helps you run the job that follows: the request, the estimate, the scheduled visit, the crew on the road, the invoice and the payment, all in one place. It is built for HVAC, plumbing, electrical, cleaning, landscaping and other trades that work at the customer\u2019s location.",
+    includes: [
+      "Requests from your booking page or created by your team, with photos, address and services",
+      "Estimates sent to customers and turned into jobs in one click",
+      "Jobs that bring one customer, one address, every visit and the billing together",
+      "Smart scheduling that suggests times from staff hours, service areas, bookings and drive time",
+      "A schedule you can view as a list, calendar or map, filtered by staff, area and status",
+      "Route optimization that shows the drive time saved before you apply it",
+      "Staff, service areas by radius or ZIP code, travel fees and visit limits",
+      "Invoices from a job, billed as you go, with online payments",
+      "Checklists, notes, custom visit statuses like \u201COn my way\u201D, and timesheets",
+      "Email, SMS and WhatsApp updates to customers, dispatchers and crew",
+      "A branded online booking page, an AI receptionist and booking from your Google Business Profile",
+      "A mobile app so your crew can run visits from the field",
+    ],
+    steps: [
+      { t: "Step 1: Access", d: "Field Services is in private beta, so we register your interest and request access for your account." },
+      { t: "Step 2: Setup", d: "When access opens, we set up your services, staff, service areas, notifications and booking page." },
+      { t: "Step 3: Go live", d: "Your crew signs in to the mobile app with the same login and starts running visits." },
+    ],
+    whyTitle: "From lead generation to running the work",
+    why: [
+      "Most contractors lose time between the lead and the invoice: retyping details, juggling calendars, calling the crew, chasing payment. Field Services moves the whole job into the same system as your leads, so a request from your Google profile becomes an estimate, a scheduled visit and a paid invoice without starting over.",
+      "Customers outside your coverage can be blocked or sent for review, and travel fees can be added, so your crew spends the day working instead of driving.",
+    ],
+    yourPart: "Tell us how you schedule and quote today: your services, your crew and the areas you cover. We build the setup around that.",
+    faqs: [
+      { q: "Is Field Services included?", a: "Yes. It comes with your Booked Town system as a bonus once it becomes available on your account. It is in private beta at HighLevel, the platform behind the system, so access is rolling out and features may change." },
+      { q: "Can I use it today?", a: "Field Services is in private beta, and access is by enrollment. We register interest for our clients and set it up as soon as your account is enrolled. Everything else in the plan works from day one." },
+      { q: "Do I need it?", a: "No. The website, Google profile, SEO, reviews and follow-up work on their own. Field Services is for contractors who want to run scheduling, dispatch and invoicing in the same place." },
+      { q: "Which trades is it for?", a: "Trades that do the work at the customer\u2019s location, such as HVAC, plumbing, electrical, cleaning, landscaping and other home and field services." },
+    ],
+    beta: true,
   },
   {
     slug: "google-ads",

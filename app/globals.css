@@ -334,3 +334,34 @@ footer .fbottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--line
 }
 @media(max-width:480px){.navright .btn{display:none}}
 @media(prefers-reduced-motion:reduce){.panel{animation:none}.chev{transition:none}}
+
+/* ---- field services ---- */
+.mtag{font-style:normal;margin-left:8px;font:700 10px var(--font-body);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-text);background:rgba(233,101,2,.12);border-radius:999px;padding:3px 7px;vertical-align:middle}
+.fs{background:var(--navy);color:#fff}
+.fs .lead{color:#c4cfe2;margin-top:18px}
+.fs .note{color:#9fb0cc;margin-top:18px}
+.fs .checks{margin-top:22px}
+.fs .checks li{color:#e6ecf7}
+.fs .checks li::before{color:#4ade80}
+.fs .btn.ghost{color:#fff;border-color:rgba(255,255,255,.35);background:transparent}
+.fs .btn.ghost:hover{border-color:var(--accent)}
+.fs-badge{display:inline-block;background:rgba(255,200,120,.14);color:#ffb070;font:700 13px var(--font-body);border-radius:999px;padding:8px 14px;margin-bottom:18px}
+.fs-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+@media(max-width:900px){.fs-grid{grid-template-columns:1fr}}
+.fs-mock{background:#fff;color:var(--ink);border-radius:20px;padding:20px;display:grid;gap:10px;box-shadow:0 20px 44px rgba(0,0,0,.35)}
+.fs-mock .note{color:var(--mute);margin:4px 0 0;font-size:12px}
+.fsm-head{display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.fsm-row{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:12px}
+.fsm-row b{display:block;font-size:14px}
+.fsm-row small{color:var(--mute);font-size:12px}
+.fsm-time{font:700 13px var(--font-display);color:var(--mute)}
+.fsm-chip{font:700 11px var(--font-body);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.fsm-chip.done{background:rgba(21,128,61,.12);color:var(--good)}
+.fsm-chip.way{background:rgba(233,101,2,.14);color:var(--accent-text)}
+.fsm-chip.sched{background:#e9edf5;color:var(--ink)}
+.fsm-route{background:var(--bg2);border-radius:12px;padding:12px;display:grid;gap:2px;font-size:13px}
+.fsm-route span{color:var(--mute);font-size:12px}
+.fsm-bill{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fsm-bill div{border:1px solid var(--line);border-radius:12px;padding:10px;display:grid;gap:2px}
+.fsm-bill small{color:var(--mute);font-size:11px}
+.fsm-bill b{font:800 18px var(--font-display)}

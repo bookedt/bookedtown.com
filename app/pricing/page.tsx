@@ -21,6 +21,7 @@ export default function Pricing() {
         <li>Missed-call text-back and lead follow-up</li>
         <li>Review requests after every job</li>
         <li>Customer reactivation and the mobile app</li>
+        <li>Field Services (requests, jobs, scheduling, dispatch) as it opens, in private beta</li>
         <li>Monthly report in plain English</li>
       </ul>
       <BookButton className="btn">Book a free strategy call &rarr;</BookButton>
